@@ -1,14 +1,32 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import reportWebVitals from "./reportWebVitals";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import App from "./App";
+import Admin from "./Admin";
+import StateFunction from "./StateFunction";
+import StateClass from "./stateClass";
+// import Student from "./Student";
+import StudentData from "./StudentData";
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
+  // <React.StrictMode>
+  //   <App />
+  //   <Admin />
+  //   <StateFunction />
+  //   <StateClass/>
+  // </React.StrictMode>
+  // Strict mode will print or run the function twice when using the useState. Fragment will correct this issue
+
+  <React.Fragment>
     <App />
-  </React.StrictMode>
+    <Admin />
+    <StateFunction />
+    <StateClass />
+    <StudentData />
+  </React.Fragment>
 );
 
 // If you want to start measuring performance in your app, pass a function

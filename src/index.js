@@ -3,29 +3,54 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 
-import App from "./App";
-import Admin from "./Admin";
-import StateFunction from "./StateFunction";
-import StateClass from "./stateClass";
-// import Student from "./Student";
-import StudentData from "./StudentData";
+// import App from "./App";
+// import Admin from "./Admin";
+// import StateFunction from "./StateFunction";
+// import StateClass from "./stateClass";
+// // import Student from "./Student";
+// import StudentData from "./StudentData";
+// import { Input } from "./Input";
+// import { ShowHide } from "./ShowHide";
+// import FormFunction from "./Form";
+// import Profile from "./Profile";
+// import Login from "./Login";
+
+// import Main from "./App/Main";
+
+// import App from "./Lifecycle Methods/App";
+
+import Hooks from "./Hooks/hooks";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   // <React.StrictMode>
-  //   <App />
-  //   <Admin />
-  //   <StateFunction />
-  //   <StateClass/>
+  // <App />
+  // <Admin />
+  // <StateFunction />
+  // <StateClass />
+  // <StudentData />
+  // <Input />
+  // <ShowHide />
   // </React.StrictMode>
   // Strict mode will print or run the function twice when using the useState. Fragment will correct this issue
 
   <React.Fragment>
-    <App />
+    {/* <App />
     <Admin />
     <StateFunction />
     <StateClass />
     <StudentData />
+    <Input />
+    <ShowHide />
+    <FormFunction />
+    <Profile /> 
+    <Login /> */}
+
+    {/* <Main /> */}
+
+    {/* <App /> */}
+
+    <Hooks />
   </React.Fragment>
 );
 

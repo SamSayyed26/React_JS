@@ -12,9 +12,9 @@ class App extends Component {
       show: true,
     };
   }
-  componentDidMount() {
-    console.log("Calling ComponentDidMount");
-  }
+  // componentDidMount() {
+  //   console.log("Calling ComponentDidMount");
+  // }
   shouldComponentUpdate() {
     console.log("Calling shouldComponentUpdate");
     if (this.state.count <= 10) {
@@ -24,15 +24,15 @@ class App extends Component {
       return false;
     }
   }
-  //   componentDidUpdate(previousProp, previousState, snapshot) {
-  //     console.log("Calling componentDidUpdate ", previousState);
+    componentDidUpdate(previousProp, previousState, snapshot) {
+      console.log("Calling componentDidUpdate ", previousState);
 
-  //     if (this.state.count < 10) {
-  //       this.setState({ count: this.state.count + 1 });
-  //     }
+      if (this.state.count < 10) {
+        this.setState({ count: this.state.count + 1 });
+      }
 
-  //     /* We can update value in here, though use a conditional statement for it to update, otherwise it will form an infinite loop. It will once update the value using the click setState(), then this function runs , then the setState() in this function and then the loop continues*/
-  //   }
+      /* We can update value in here, though use a conditional statement for it to update, otherwise it will form an infinite loop. It will once update the value using the click setState(), then this function runs , then the setState() in this function and then the loop continues*/
+    }
   render() {
     console.log("Calling Render");
 

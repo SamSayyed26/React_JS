@@ -19,7 +19,9 @@ import reportWebVitals from "./reportWebVitals";
 
 // import App from "./Lifecycle Methods/App";
 
-import Hooks from "./Hooks/hooks";
+// import Hooks from "./Hooks/hooks";
+
+import App from "./Routing/App";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -50,7 +52,9 @@ root.render(
 
     {/* <App /> */}
 
-    <Hooks />
+    {/* <Hooks /> */}
+
+    <App />
   </React.Fragment>
 );
 
